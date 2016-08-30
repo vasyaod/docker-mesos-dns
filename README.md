@@ -36,7 +36,8 @@ curl -XPOST 'http://192.168.0.100:8080/v2/apps' -H 'Content-Type: application/js
     "env": {
         "LOCAL_IP": "192.168.0.100",
         "MESOS_ZK": "zk://192.168.0.100:2181/mesos",
-        "MESOS_DNS_EXTERNAL_SERVERS": "8.8.8.8,8.8.4.4"
+        "MESOS_DNS_EXTERNAL_SERVERS": "8.8.8.8,8.8.4.4",
+        "MESOS_IP_SOURCES": "netinfo,mesos,host"
     },
     "container": {
         "docker": {
